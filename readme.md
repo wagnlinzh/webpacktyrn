@@ -4,6 +4,10 @@
 
 需要做的是把当前的专题用webpack包装起来.
 
+
+
+
+<br /><br />
 ## log
 
 0710 主题
@@ -18,7 +22,7 @@ webpack html-loader
 
 
 
-
+<br /><br />
 ## PART 1
 
 
@@ -40,7 +44,7 @@ webpack html-loader
 
 
 
-
+<br /><br />
 
 
 # PART 2
@@ -78,8 +82,7 @@ by wanglinzhizhi
 
 
 
-<br /><br /><br /><br /><br /><br />
-
+<br /><br />
 
 
 ## 这是项目的修改日志
@@ -91,7 +94,7 @@ Tips: 时间点不用记录,因为每次push,每次commit系统都有时间记�
 
 
 
-<br /><br /><br /><br /><br /><br /><br />
+<br /><br />
 
 ## 关于webpack的log
 
@@ -150,7 +153,7 @@ Tips: 时间点不用记录,因为每次push,每次commit系统都有时间记�
 
 
 
-<br /><br /><br /><br /><br /><br /><br /><br />
+<br /><br />
 
 
 
@@ -170,7 +173,7 @@ Tips: 时间点不用记录,因为每次push,每次commit系统都有时间记�
 
 
 
-<br /><br /><br /><br /><br />
+<br /><br />
 
 #### next hash 化,去缓存 -> 必须hash的原因, 缓存. -> html-webpack-plugin
 
@@ -182,7 +185,7 @@ Tips: 时间点不用记录,因为每次push,每次commit系统都有时间记�
 
 
 
-<br /><br /><br /><br /><br /><br /><br />
+<br />
 
 
 
@@ -201,7 +204,7 @@ new webpack.ProvidePlugin({
 
 
 
-<br /><br /><br /><br /><br /><br /><br />
+<br /><br />
 ## logo 0715
 
 我试着把jquery 换成了1.12.x版本, 额,基本没事儿,因为我把jquery1.12.x版本的内容放到原版中没有问题.虽然有个小报错, 但是没有关系.     
@@ -237,4 +240,44 @@ test...
 
 <br /><br />
 ## #4 
-整理下,
+整理下, 现在解决的问题
+
+1.  jquery的 依赖问题 done
+2.  html代码直接作为模板打包到dist的目录
+
+
+需要继续解决的问题
+
+- 各个模块的加载顺序 就是 `html-webpack-plugin` 的注入顺序的问题.
+- 对低版本的 jquery的依赖怎么搞.另外,我想把部分的内容inject 到head 另一部分inject 到body怎么整.
+- 关于调试, 怎么方便的 调试, 使得迁移成本尽可能小, 无痛, 无缝......... loading....
+- 关于 怎么优化webpack的性能.....loading....
+
+<br /><br />
+
+## #6
+
+关于调试
+可以用映射,映射到源文件上 这样调试的时候不会不知道代码在哪儿.
+
+使用`devtool: 'eval-source-map' ` 放在配置文件中.
+需要注意的是, `css?sourceMap` 对于css ,只需要给css-laoder加
+
+
+<br /><br /><br /><br /><br /><br /><br /><br /><br />
+## vscode 快捷键收集
+```
+快捷键
+
+alt+shift+F 代码格式化
+
+ctrl+` 内嵌终端
+
+主要是可以不用页面切换, 缺点是, cmd的终端太弱.... mac上好一点. 可以用zsh :)
+
+
+
+```
+
+
+Terminal 中不能输入中文.恩....(T_T)
