@@ -1,0 +1,38 @@
+{
+  "name": "rav4crolla",
+  "version": "1.0.0",
+  "description": "rav4crolla webpack try1",
+  "main": "index.js",
+  "scripts": {
+    "test": "webpack",
+    "start": "webpack-dev-server --hot --inline"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://192.168.15.75:3141/wanglinzhizhi/rav4Crolla.git"
+  },
+  "keywords": [
+    "webpack",
+    "try12 rav4Crolla"
+  ],
+  "author": "wanglinzhizhi",
+  "license": "MIT",
+  "dependencies": {
+    "babel-polyfill": "^6.9.1",
+    "jquery": "^1.12.4"
+  },
+  "devDependencies": {
+    "autoprefixer-loader": "^3.2.0",
+    "babel-loader": "^6.2.4",
+    "babel-preset-es2015": "^6.9.0",
+    "css-loader": "^0.23.1",
+    "file-loader": "^0.9.0",
+    "html-loader": "^0.4.3",
+    "html-webpack-plugin": "^2.22.0",
+    "imports-loader": "^0.6.5",
+    "jquery": "^1.12.4",
+    "style-loader": "^0.13.1",
+    "url-loader": "^0.5.7",
+    "webpack": "^1.13.1"
+  }
+}

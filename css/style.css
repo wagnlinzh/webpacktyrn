@@ -1,0 +1,78 @@
+﻿@charset "utf-8";
+/* CSS Document */
+
+
+
+/*Register Style*/
+.register ul.column_1 li {width: 99.5%}
+.register ul.column_1 .select_box{ width:95%}
+.register ul.column_1 li.checkbox-submitbtn {width: 100%;; border:0}
+.register ul.column_1 li.verification{ width:77% !important; float:left;}
+.register ul.column_1 li.yzm{width:19.2% !important;margin-left: 2%;}
+
+.register ul.column_2 li {width: 47%;margin-left:2%}
+.register ul.column_2 .select_box{ width:92%}
+.register ul.column_2 li.checkbox-submitbtn {width: 99.5%;margin-left:2%; border:0}
+.register ul.column_2 li.verification{ width:36% !important; float:left;}
+.register ul.column_2 li.yzm{width:9.9% !important;margin-left: 1%;}
+
+.register ul.column_3 li {width: 30.6666%;margin-left:2%}
+.register ul.column_3 .select_box{ width:90%}
+.register ul.column_3 li.checkbox-submitbtn {width: 99.5%;margin-left:2%; border:0; }
+.register ul.column_3 li.verification{ width:21.6% !important; float:left;}
+.register ul.column_3 li.yzm{width:7.9% !important;margin-left: 1%;}
+
+.register ul.column_4 li {width: 22%;;margin-left:2%}
+.register ul.column_4 li.checkbox-submitbtn {width: 99.5%;margin-left:2%; border:0; }
+.register ul.column_4 li.verification{ width:12.9% !important; float:left;}
+.register ul.column_4 li.yzm{width:7.9% !important;margin-left: 1%;}
+
+.register ul{width: 100%;}
+.register ul li{margin-bottom:10px;float:left;border-radius: 4px;}
+.register .form-control{background: transparent;background-image: none;border-radius: 4px;border: 0 none;box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;display: block;font-size: 14px;height: 34px;line-height: 34px;transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;width: 81.5%;float:left;font-family:'Microsoft YaHei';padding-left: 3%;}
+.register li span{display:block;  width:15%; height:34px;line-height:30px; text-align: center;padding:0;float:right; }
+.register .select_box{display:block;height:34px;line-height:34px \9;border:0;outline:0;width: 87%;}
+.simulate-select{height:34px; width:85%;position:relative; float: left;border-radius: 4px;/*background: #fff url("../images/arrow.png") no-repeat scroll right top;*/}
+.simulate-select dl{width:100%;display:none;position:absolute;left:-1px;top:35px;overflow:hidden;background-color:#fff;max-height:150px;overflow-y:auto;border:1px solid #999;z-index:9;}
+.simulate-select dl dd{height:22px;line-height:22px;overflow:hidden;padding:0 3%;cursor:pointer;z-index:999;position:relative;}
+.simulate-select dl dd:hover{background-color:#3399fe; color:#fff;}
+.on_ie7_hack{*z-index:10;}
+
+/*Checkbox Style*/
+.checkbox-submitbtn {display: block;margin-bottom: 10px;margin-top: 10px;text-align: center;position: relative;}
+.checkbox-submitbtn label {display: inline-block;cursor: pointer;font-weight: 400;margin-bottom: 2%;min-height: 20px;padding-left: 20px;max-width: 100%;  }
+.checkbox-submitbtn input{display: inline-block;float: left;margin-left: -20px;position: absolute;line-height: normal;box-sizing: border-box;padding: 0;vertical-align: middle;margin-top: 4px;*margin-top: -3px;}
+/*Button Style*/
+.btn {-moz-user-select: none;background-image: none;border: 1px solid transparent;border-radius: 4px;cursor: pointer;display: inline-block;font-size: 14px;font-weight: 400;margin-bottom: 0;height: 34px;line-height: normal;text-align: center;vertical-align: middle;white-space: nowrap;transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s, background-color 0.15s ease-in-out 0s;}
+.btn.active.focus, .btn.active:focus, .btn.focus, .btn.focus:active, .btn:active:focus, .btn:focus {outline: thin dotted;outline-offset: -2px;}
+.btn.focus, .btn:focus, .btn:hover {color: #333;text-decoration: none;}
+.btn.active, .btn:active {background-image: none;box-shadow: 0 3px 5px rgba(0, 0, 0, 0.125) inset;outline: 0 none;}
+.btn-default {background-color: #fff;color: #333;width: 100%;}
+.btn-submit {background-color: #fff;border-color: #ccc;color: #333;width: 99.5%;}
+
+.btn-default:focus,  .btn-submit:focus,  .btn-login:focus {background: #e6e6e6;color: #333;}
+
+/*IE6&7 hack*/
+*+html .register ul.column_1 .form-control{padding-left:1%;}
+*html .register ul.column_1 .form-control{padding-left:0;margin-left:-0.8%}
+*+html .register ul.column_2 .form-control{padding-left:1%;margin-left:-1.5%}
+*html .register ul.column_2 .form-control{padding-left:0;margin-left:-0.8%}
+*+html .register ul.column_3 .form-control{padding-left:1%;margin-left:-1.5%}
+*html .register ul.column_3 .form-control{padding-left:0;margin-left:-0.8%}
+*+html .register ul.column_4 .form-control{padding-left:1%;margin-left:-1.5%}
+*html .register ul.column_4 .form-control{padding-left:0;margin-left:-0.8%}
+
+*+html .register ul.column_2 .select_box{margin-left:1%}
+*html .register ul.column_2 .select_box{margin-left:1.1%}
+*+html .register ul.column_3 .select_box{margin-left:1%}
+*html .register ul.column_3 .select_box{margin-left:1.1%}
+*+html .register ul.column_4 .select_box{margin-left:1%}
+*html .register ul.column_4 .select_box{margin-left:1.1%}
+
+*html .register ul.column_3 li {width: 29.6666%;margin-left:2%}
+*html .register ul.column_3 li.verification{ width:21.6% !important; float:left;}
+*html .register ul.column_3 li.yzm{width:6.9% !important;margin-left: 1%;}
+
+*html .register ul.column_2 li {width: 46.6%;margin-left:2%}
+*html .register ul.column_2 li.verification{ width:36% !important; float:left;}
+*html .register ul.column_2 li.yzm{width:9.5% !important;margin-left: 1%;}
